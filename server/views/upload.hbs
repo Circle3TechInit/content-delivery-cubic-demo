@@ -1,0 +1,118 @@
+{{> _header}}
+
+<main class="wdth100 hvw row justify-center gap-row-30 font-main pb-5">
+    <div class="col-12-xs col-11-sm col-10-md col-10-lg text-center">
+        <h2 class="pt-3 font-xl text-blue font-main">Upload Files To The Gallery</h2>
+        <p class="pt-3 font-md text-blue font-main">
+            Click the relevant button below to upload your files to the gallery.
+        </p>
+    </div>
+
+    {{#if message}}
+        <div class="col-12-xs col-11-sm col-10-md col-10-lg text-center p-2">
+            <p class="pt-3 font-md text-green font-main">{{message}}</p>
+        </div>
+    {{/if}}
+
+    {{!-- image --}}
+    <button type="button" class="wdth60 collapsible text-center text-white btn-rect-blue">UPLOAD IMAGE</button>
+    <div class="col-12-xs col-11-sm col-10-md col-9-lg content br-2">
+        <div class="col-12-xs col-11-sm col-10-md col-12-lg text-center slideInRight p-2">
+            <form action="/image/uploadfile" method="POST" class="wdth100 hvw row justify-center gap-row-30 p-1" enctype="multipart/form-data">
+                <div class="col-12-xs col-11-sm col-10-md col-10-lg p-1 border-gray br-2 hvw row align-item-center justify-center gap-row-20">
+                    
+                    <div class="col-12-xs col-11-sm col-10-md col-10-lg text-center">
+                        <label for="file">Fileupload</label>
+                        <input type="file" name="file" class="inputt"/>
+                    </div>
+                    <div class="col-12-xs col-11-sm col-10-md col-10-lg">
+                        <label for="file">Fileupload</label>
+                        <input type="file" name="file" class="inputt"/>
+                    </div>
+                    <div class="col-12-xs col-11-sm col-10-md col-10-lg">
+                        <label for="file">Fileupload</label>
+                        <input type="file" name="file" class="inputt"/>
+                    </div>
+                    <div class="col-12-xs col-11-sm col-10-md col-10-lg">
+                        <label for="file">Fileupload</label>
+                        <input type="file" name="file" class="inputt"/>
+                    </div>
+                
+                </div>
+
+                <div class="col-12-xs col-11-sm col-10-md col-10-lg">
+                    <button type="submit" class="wdth100 btn-rect-gray text-white">UPLOAD</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {{!-- audio --}}
+    <button type="button" class="wdth60 collapsible text-center text-white btn-rect-blue">UPLOAD AUDIO</button>
+    <div class="col-12-xs col-11-sm col-10-md col-9-lg content br-2">
+        <div class="col-12-xs col-11-sm col-10-md col-12-lg text-center slideInRight p-2">
+            <form action="/audio/uploadfile" method="POST" class="wdth100 hvw row justify-center gap-row-30 p-1" enctype="multipart/form-data">
+                <div class="col-12-xs col-11-sm col-10-md col-10-lg p-1 border-gray br-2 hvw row align-item-center justify-center gap-row-20">
+                    
+                    <div class="col-12-xs col-11-sm col-10-md col-10-lg text-center">
+                        <label for="file">Fileupload</label>
+                        <input type="file" name="file" class="inputt"/>
+                    </div>
+                    <div class="col-12-xs col-11-sm col-10-md col-10-lg">
+                        <label for="file">Fileupload</label>
+                        <input type="file" name="file" class="inputt"/>
+                    </div>
+                    <div class="col-12-xs col-11-sm col-10-md col-10-lg">
+                        <label for="file">Fileupload</label>
+                        <input type="file" name="file" class="inputt"/>
+                    </div>
+                    <div class="col-12-xs col-11-sm col-10-md col-10-lg">
+                        <label for="file">Fileupload</label>
+                        <input type="file" name="file" class="inputt"/>
+                    </div>
+                
+                </div>
+
+                <div class="col-12-xs col-11-sm col-10-md col-10-lg">
+                    <button type="submit" class="wdth100 btn-rect-gray text-white">UPLOAD</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {{!-- VIDEO --}}
+    <button type="button" class="wdth60 collapsible text-center text-white btn-rect-blue">UPLOAD VIDEO</button>
+    <div class="col-12-xs col-11-sm col-10-md col-9-lg content br-2">
+        <div class="col-12-xs col-11-sm col-10-md col-12-lg text-center slideInRight p-2">
+            <form action="/video/uploadfile" method="POST" class="wdth100 hvw row justify-center gap-row-30 p-1" enctype="multipart/form-data">
+                <div class="col-12-xs col-11-sm col-10-md col-10-lg p-1 border-gray br-2 hvw row align-item-center justify-center gap-row-20">
+                    
+                    <div class="col-12-xs col-11-sm col-10-md col-10-lg text-center">
+                        <label for="file">Fileupload</label>
+                        <input type="file" name="file" class="inputt"/>
+                    </div>
+                    <div class="col-12-xs col-11-sm col-10-md col-10-lg">
+                        <label for="file">Fileupload</label>
+                        <input type="file" name="file" class="inputt"/>
+                    </div>
+                    <div class="col-12-xs col-11-sm col-10-md col-10-lg">
+                        <label for="file">Fileupload</label>
+                        <input type="file" name="file" class="inputt"/>
+                    </div>
+                    <div class="col-12-xs col-11-sm col-10-md col-10-lg">
+                        <label for="file">Fileupload</label>
+                        <input type="file" name="file" class="inputt"/>
+                    </div>
+                
+                </div>
+
+                <div class="col-12-xs col-11-sm col-10-md col-10-lg">
+                    <button type="submit" class="wdth100 btn-rect-gray text-white">UPLOAD</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</main>
+
+{{> _footer}}

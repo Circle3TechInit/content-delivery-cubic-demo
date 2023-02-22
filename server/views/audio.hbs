@@ -1,0 +1,24 @@
+{{> _header}}
+
+<main class="wdth100 hvw row justify-center gap-row-30 font-text pb-5">
+    <div class="col-12-xs col-11-sm col-10-md col-10-lg text-center slideInRight">
+        <h2 class="pt-3 font-xl text-blue font-main">Audio Gallery</h2>
+    </div>
+
+    {{#if data.audio}}
+        <div class="col-12-xs col-11-sm col-10-md col-11-lg hvw row justify-center gap-col-30 gap-row-40 text-center slideInLeft">
+            {{#each data.audio}}
+                <div class="col-12-xs col-5-sm col-3-md col-4-lg hvw bg-blue p-1 br-2">
+                    <audio src={{source}} controls></audio>
+                    <p class="text-white wordb-bk p-1">{{musicName}}</p>
+                </div>
+            {{/each}}
+        </div>
+    {{else}}
+        <div class="col-12-xs col-11-sm col-10-md col-10-lg text-center slideInLeft">
+            <p class="font-md">No audio to Display !!!</p>
+        </div>
+    {{/if}}
+</main>
+
+{{> _footer}}

@@ -1,0 +1,29 @@
+{{> _header}}
+
+<main class="wdth100 hvw row justify-center gap-row-40 font-text pb-5">
+    <div class="col-12-xs col-11-sm col-10-md col-10-lg text-center slideInRight">
+        <h2 class="pt-3 font-xl text-blue font-main">Video Gallery</h2>
+    </div>
+
+    {{#if data.videos}}
+        <div class="col-12-xs col-11-sm col-10-md col-12-lg hvw row justify-center gap-col-20 gap-row-50 text-center slideInLeft">
+            {{#each data.videos}}
+            <div class="col-12-xs col-5-sm col-4-md col-3-lg hvw row justify-center">
+                <div class="col-12-xs col-12-sm col-12-md col-12-lg hvw45">
+                    <video src={{source}} controls preload="metadata"></video>
+                </div>
+                <div class="col-12-xs col-12-sm col-12-md col-12-lg text-center p-1">
+                    <p class="text-blue wordb-bk">{{videoName}}</p>
+                </div>
+            </div>
+                
+            {{/each}}
+        </div>
+    {{else}}
+        <div class="col-12-xs col-11-sm col-10-md col-10-lg text-center slideInLeft">
+            <p class="font-md">No videos to Display !!!</p>
+        </div>
+    {{/if}}
+</main>
+
+{{> _footer}}
